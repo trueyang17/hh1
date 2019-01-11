@@ -1,0 +1,188 @@
+@font-face{
+    font-family: myFont;
+    src: url(../font/ancona.ttf);
+}
+@font-face{
+    font-family: myIcon;
+    src: url(../font/iconfont.ttf);
+}
+body{
+    background: #ebebeb;
+}
+.icon{
+    font-family: myIcon;
+}
+.icon-touxiang::after{
+    content: "\e683"
+}
+.icon-qianbao::before{
+    content: "\e617"
+}
+.icon-qiuxie::before{
+    content:"\e63c";
+}
+.icon-koushao::before{
+    content:"\e600";
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+header{
+    line-height: 1.66rem;
+    background: #2e2e2e;
+    color: #fff;
+    text-align: center;
+    font-size: .66rem;
+}
+.detail{
+    padding: 0 .52rem .48rem;
+    background: #fff;
+    margin-bottom: .28rem;
+}
+.detail .date{
+    line-height: 1.52rem;
+    font-size: .44rem;
+    padding: 0 .6rem;
+}
+.detail .date i{
+    font-style: normal;
+}
+.detail .date .hour{
+    padding: 0 .34rem;
+}
+.detail .date .deadline i{
+    display: inline-block;
+    width: .64rem;
+    height: .64rem;
+    line-height: .64rem;
+    text-align: center;
+    background: #675757;
+    color: #fff;
+    font-family: myFont;
+    font-size: .6rem;
+    margin: 0 .04rem;
+}
+.countryCont{
+    font-size: .6rem;
+    line-height: 1.04rem;
+    padding: 0 1.74rem;
+}
+.countryCont img{
+    width: .88rem;
+    height: .88rem;
+    border: .08rem solid #e8e6e6;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.countryCont .countryLeft{
+    width: 3.32rem;
+    
+}
+.countryCont .countryLeft img{
+    margin-right: .34rem;
+}
+.countryCont .score{
+    margin: 0 .96rem;
+    font-family: myFont;
+    font-size: 1rem;
+    color: #555;
+}
+.countryCont .countryRight img{
+    margin-left: .34rem;
+}
+.support{
+    background: #f5f5f5;
+    border-radius: 3px;
+    padding: .36rem .53rem .22rem;
+    margin-top: .46rem;
+}
+.support li{
+    float: left;
+    width: 4.3rem;
+    font-size: .42rem;
+    text-align: center;
+}
+.support li .circle{
+    display: block;
+    width: 1.16rem;
+    height: 1.16rem;
+    border: .26rem solid #fff;
+    border-color: #fff #fff #fff #555;
+    transform: rotate(135deg);
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.support li p{
+    margin-top: .18rem;
+    line-height: .72rem;
+}
+.support li .ratio{
+    font-family: myFont;
+    line-height: .94rem;
+    font-size: .6rem;
+    margin-top: 0;
+}
+.support li .ratio span{
+    font-size: .96rem;
+}
+.contFour{
+    padding: 0 1.32rem;
+    text-align: center;
+    margin-top: .38rem;
+}
+.contFour li{
+    float: left;
+    width: 5.64rem;
+    font-size: .4rem;
+    line-height: 1.06rem;
+}
+.contFour li span{
+    font-family: myFont;
+    font-size: .92rem;
+    padding-left: .48rem;
+}
+.contFour li i{
+    font-style: normal;
+    font-size: .7rem;
+    margin-right: .28rem;
+}
+.btn{
+    display: block;
+    width: 12.74rem;
+    height: 1.56rem;
+    line-height: 1.56rem;
+    text-align: center;
+    font-size: .6rem;
+    border: 1px solid #f14247;
+    color: #f14247;
+    margin: .48rem auto;
+    box-sizing: border-box;
+}
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #2e2e2e;
+    color: #fff;
+}
+footer ul{
+    display: flex;
+}
+footer ul li{
+    flex: 1;
+    text-align: center;
+    font-size: .36rem; 
+    padding-top: .24rem;
+}
+footer ul li span{
+    font-size: 1rem;
+    padding-bottom: .01rem;
+}
+footer ul li p{
+    line-height: .72rem;
+}

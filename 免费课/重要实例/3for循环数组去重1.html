@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var arr = [1, 2, 3, 1, 2, 3,5,7];
+		// var arr = [1, 2, 2, 2, 2, 3, 1, 2, 3];
+		// => [1, 2, 3, 4]
+		// 两次循环去重
+		// 时间复杂度 
+		for (var i = 0; i < arr.length; i++) {
+		    var cur = arr[i];
+		    // 用cur 和 数组后面的每一项作比较
+		    // i + 1 就是cur后面的第一项
+		    for (var j = i + 1; j < arr.length; j++) {
+		        if (cur === arr[j]) {
+		            // 把索引为J这一项删除
+		            arr.splice(j, 1);
+		            // j = 3
+		            // [1,2,3,1,2,3] => [1,2,3,2,3]
+		            // j++ => 4 漏了比较第二个2这一项，这就是数组塌陷
+		             j--; //所以需要 -1
+		        }
+		    }
+		}
+		alert(arr)
+		// console.log(arr)s
+		// 两次循环嵌套
+		// 外部循环，拿到的一个值和内部循环每个值作比较，如果相同就删了内部循环相同的值
+
+		function unique1 (arr) {
+		    for (var i = 0; i < arr.length; i++) {
+		        var cur = arr[i];
+		        for (var j = i + 1; j < arr.length; j++) {
+		            if (cur === arr[j]) {
+		                arr[j] = arr[arr.length - 1];
+		                arr.splice(arr.length - 1, 1);
+		                j--;
+		            }
+		        }
+		    }
+		    return arr;
+		}
+		//alert(unique1 (arr))
+	</script>
+	
+</body>
+</html>

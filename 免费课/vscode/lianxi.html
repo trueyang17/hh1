@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var obj = {name:'ang',age:22}
+        // //alert(obj.name)
+        // alert(obj['name'])
+
+        // var arr = ['lastname','yang'];
+        // var obj = {};
+        // obj[arr[0]] = arr[1];
+        // console.log(obj)
+        // alert(arr)
+
+        //alert(undefined=null)
+
+
+        var arr = [{name:'上衣',num:300,},{name:'帽子','num':20},
+        {name:'裤子','num':150},{name:'袜子','num':30}]
+        arr.sort(compare('num'))//将数组元素中的num传给函数参数p
+        function compare(p) {
+           return function (a,b) {
+                return a.p - b.p //=>a[p] - b[p]js中只要是.name都可以写成[name]
+            }//p=>num,a和b代表数组的元素即对象a.p表示引用了num中数字从而进行升序排列
+        }
+        alert(arr)
+
+        //var arr = [16,2,1,34,15,9];
+        //arr.push(1,2)
+        //arr.pop()
+       // arr.unshift(-1,0)
+       // arr.shift()
+        // arr.sort(function (a,b) {
+        //     return a-b;
+        // })
+        // arr.sort(function (a,b) {
+        //    return b-a;
+        // })
+        //arr.reverse()
+        //arr.splice(1,0,'dd')
+        //arr.splice(1,2)
+        //arr.splice(1,2,'dfd')
+        //arr.splice(-2)
+        //a=arr.slice(0,3)
+        //console.log(a)
+        // b=arr.toString()
+        // console.log(b)
+        //   c=delete arr[2]
+        //   console.log(c)
+   </script>
+    <script>
+        // function fn(n) {
+        //     if (n < 1) {
+        //         return 0;
+        //     }
+        //    else{
+        //     return (n + fn(n-1))
+        //    } 
+        // }
+        // console.log(fn(9))
+    </script>
+    <script>
+        // var arr=[1,2,3,[4,5,[6,7[8,9]]]] //数组扁平化
+        // function myFlat(arr,result) {
+        //     if (!result) {
+        //         var result = [];
+        //     }
+        //     for (let i = 0; i < array.length; i++) {
+        //         const element = array[i];
+        //         i++;
+        //     }
+        // }
+        // alert(arr)
+
+
+        // function myFlat(arr) {
+        //     return [].concat(...arr.map(x => Array.isArray(x) ? myFlat(x) : x))
+        // }
+        // console.log(myFlat(arr))
+        //alert(Math.round(-2.444))
+    </script>
+    <script>
+        //数组洗牌算法
+        //arr = [1,2,3,4,5,6]
+        
+        //每次循环随机拿到一个可用索引
+        //和未操纵部分的最后一项做交换；
+        //已操作部分增加1，未操作部分减少1
+        //初始化
+       //  var len = arr.length;//6
+       //  for (var i = len - 1; i >= 0; i--) {
+       //      var index = Math.floor(Math.random()*len);//0 1 2 3 4 5
+       //      var temp = arr[i];
+       //      arr[i] = arr[index];
+       //      arr[index] = temp;
+       //      len--;
+       //  }
+       // alert(arr) 
+       //1.在可用索引中随机取一个值|---取索引---|---已经洗好的牌--|
+       //2.将取到的索引所在的值和未洗牌的最后一项交换位置
+       //(未洗牌数量-1/可用索引-1)
+        // 
+// function ful(arr) {
+        //     var len = arr.length;
+        //     while (len > 0){
+        //         var index = Math.floor(Math.random()*len);
+        //         var temp = arr[len - 1];
+        //         arr[len - 1] = arr[index];
+        //         arr[index] = temp;
+        //     len--;
+        //     }
+        //     return arr
+        // }
+        // console.log(ful(arr))
+
+        // var total = 0;
+        // arr = [1,2,3,4,5,6]//1/6
+        // for (var i = 0; i < 999999; i++) {
+        //     var result = ful(arr);
+        //     if (result[1] === 2) {
+        //         total++;
+        //     }
+        // }
+        // console.log(total/999999)
+    
+    //var arr = [{'a':1},{'b':2},{'c':3},{'d':4}]
+    // var arr = [1,2,3,4]
+    // alert(arr)
+    
+    // var obj = {name:'yang',age:'65',adress:'beijing'}
+    // console.log(obj)
+    </script>
+</body>
+</html>

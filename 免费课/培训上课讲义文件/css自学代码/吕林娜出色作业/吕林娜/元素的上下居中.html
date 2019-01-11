@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            margin: 0 auto;
+        }
+        .container{
+            width: 400px;
+            height: 200px;
+            border: 1px solid purple;
+            margin-bottom: 10px;
+            overflow: hidden;
+            position: relative;
+            font-size: 0;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .note{
+            text-align: center;
+            font-size: 14px;
+        }
+        span{
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: lightblue;
+            font-size: 30px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .span1{
+            margin: 50px 150px;
+        }
+        .container1{
+            width: 100px;
+            height: 100px;;
+            padding: 50px 150px;
+        }
+        .span3{
+            position: relative;
+            top: 50px;
+            left: 150px;
+        }
+        .span4{
+            position: absolute;
+            top: 50px;
+            left: 150px;;
+        }
+        .span5{
+            transform: translate(150px,50px);
+        }
+        .fill1{
+            width: 100%;
+            height: 50px;
+        }
+        .fill2{
+            display: inline-block;
+            /* float: left; */
+            width: 150px;
+            height: 10px;
+        }
+        .span6{           
+            display: inline-block;
+            /* float: left; */
+        }
+        .container2{
+            display:flex;
+        }
+        .fill3{
+            display: inline-block;
+            flex: 3;
+        }
+        .span7{
+            display: inline-block;
+            flex: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="note">通过设置容器的margin来实现元素居中</div>
+    <div class="container"><span class="span1">1</span></div>
+    <div class="note">通过设置容器的pading来实现元素居中</div>
+    <div class="container container1"><span class="span2">2</span></div>
+    <div class="note">通过设置元素的相对定位来实现居中</div>
+    <div class="container" style="font-size:14px;"><span class="span3">3</span>asfdadsa</div>
+    <div class="note">通过设置元素的绝对定位来实现居中</div>
+    <div class="container"><span class="span4">4</span></div>
+    <div class="note">利用transform:translate()进行两个方向的位移实现居中</div>
+    <div class="container"><span class="span5">5</span></div>
+    <div class="note">在容器内的上方和左侧添加标签占位实现元素居中</div>
+    <div class="container clearfix">
+        <div class="fill1"></div>
+        <div class="fill2"></div>
+        <span class="span6">6</span>
+    </div>
+    <div class="note">容器内添加填充元素，通过弹性盒模型设置元素水平居中</div>
+    <div class="container container2">
+        <div class="fill3"></div>
+        <span class="span7">7</span>
+        <div class="fill3"></div>
+    </div>
+</body>
+</html>

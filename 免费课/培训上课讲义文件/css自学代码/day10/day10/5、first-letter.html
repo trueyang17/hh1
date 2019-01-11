@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+        div::first-letter{
+            /* 选中第一个字符 */
+            color: red;
+        }
+        div::first-line{
+            background: yellow;
+        }
+        p::selection{
+            color: green;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <div>div元素div元素div元素div元素</div>
+    <p>我是p元素</p>
+</body>
+</html>

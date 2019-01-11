@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    width: 1204px;
+    margin: 0 auto;
+}
+.header .logo,.header .nav,.header .car{
+    float: left;
+}
+.header .login{
+    float: right;
+}
+.header .logo{
+    width: 176px;
+    height: 52px;
+    margin: 16px 55px 16px 1px;
+}
+.header .logo img{
+    width: 100%;
+}
+.header .nav li{
+    float: left;
+    margin-left: 30px;
+    margin-top: 31px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.header .nav li a{
+    color: #2a2a2a;
+}
+.header .nav li:hover a{
+    color: #2b7dd1;
+}
+.header .car{
+    font-size: 14px;
+    margin-left: 121px;
+}
+.header .car span{
+    display: inline-block;
+    line-height: 30px;
+    margin-top: 31px;
+    background: url(../img/car.png) left center no-repeat;
+    padding-left: 31px;
+    cursor: pointer;
+}
+.header .car span:hover{
+    color: #2b7dd1;
+    background-image: url(../img/car_A.png);
+}
+.header .login{
+    line-height: 30px;
+    margin-top: 31px;
+    font-size: 14px;
+    margin-right: 1px;
+}
+.header .login a{
+    color: #666767;
+    margin-right: 30px;
+}
+.header .login a:hover{
+    color: #2b7dd1;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        ul{
+            background: blue;
+            list-style: none;
+            border: 1px solid red;
+        }
+        ul li{
+            float: left;
+            line-height: 40px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <ul class="clearfix">
+        <li>首页</li>
+        <li>首页</li>
+        <li>首页</li>
+        <li>首页</li>
+        <li>首页</li>
+        <li>首页</li>
+        <li>首页</li>
+        <li>首页</li>
+        <li>首页</li>
+    </ul>
+    <ol class="clearfix">
+        <li>首页</li>
+        <li>首页</li>
+        <li>首页</li>
+        <li>首页</li>
+        <li>首页</li>
+        <li>首页</li>
+        <li>首页</li>
+        <li>首页</li>
+        <li>首页</li>
+    </ol>
+</body>
+</html>

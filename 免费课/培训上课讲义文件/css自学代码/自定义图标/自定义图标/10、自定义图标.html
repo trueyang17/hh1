@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @font-face{
+            font-family: myIcon;
+            src: url(font/iconfont.ttf);
+        }
+        .icon{
+            font-family: myIcon;
+        }
+        .icon-touxiang::after{
+            content: "\e683";
+        }
+        .icon-koushao::after{
+            content: "\e600";
+        }
+    </style>
+</head>
+<body>
+   <div class="icon-touxiang icon"></div>
+   <div class="icon icon-koushao"></div>
+   <div class="icon icon-koushao"></div>
+   <div class="icon icon-koushao"></div>
+   <div class="icon icon-koushao"></div>
+   <div class="icon">&#xe600;</div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 630px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .flower{
+            float: left;
+            width: 200px;
+            height: 200px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+            /* background: yellow; */
+            font-size: 0;
+            position: relative;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /* .flower:nth-child(3){
+            width: 300px;
+            height: 300px;
+        } */
+        .son{
+            float: left;
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+            border: 1px solid orange;
+            background: pink;
+        }
+        .soncenter{
+            width: 100px;
+            height: 100px;
+            background: orangered;
+            position: relative;
+            border-radius: 100%;
+            top: 50px;
+            left: 50px;
+            box-shadow: 0 0 20px 20px orange inset;
+        }
+        .son:first-child,.son:nth-child(4){
+            border-radius: 0 50%;
+        }
+        .son:nth-child(2),.son:nth-child(3){
+            border-radius: 50% 0;
+        }
+        .son1{
+            /* float: left; */
+            width: 200px;
+            height: 200px;
+            background: white;
+            border: 1px solid orange;
+            box-sizing: border-box;
+        }
+        .son1:first-child{
+            border-radius: 100% 0;   
+            box-shadow: 0 0 20px 20px pink inset;
+            /* display: none;          */
+        }
+        .son1:nth-child(2){
+            border-radius: 0 100%;
+            position: absolute;
+            top: 0;
+            box-shadow: 0 0 20px 20px pink inset;
+            /* display: none;          */
+        }
+        .son1center{
+            width: 144px;
+            height: 144px;
+            background: orangered;
+            position: absolute;
+            top: 28px;
+            left: 28px;
+            /* display: none; */
+            border-radius: 100%;
+            box-shadow: 0 0 20px 10px lightyellow inset;
+        }
+        .son2{
+            float: left;
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+            border: 1px solid orange;
+            background: pink;
+        }
+        .son2:first-child,.son2:nth-child(4){
+            border-radius: 0 100%;
+        }
+        .son2:nth-child(2),.son2:nth-child(3){
+            border-radius: 100% 0;
+        }
+        .son2:nth-child(5){
+            border-radius: 100% 0;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 50px;
+            left: -20px;
+        }
+        .son2:nth-child(6){
+            border-radius: 100% 0;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 50px;
+            left: 120px;
+        }
+        .son2:nth-child(7){
+            border-radius: 0 100%;
+            transform: rotate(45deg);
+            position: absolute;
+            top: -20px;
+            left: 50px;
+        }
+        .son2:nth-child(8){
+            border-radius: 0 100%;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 120px;
+            left: 50px;
+        }
+        .son2_center{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            background: orangered;
+            box-shadow: 0 0 30px 20px orange inset;
+        }
+        .center{
+            width: 142px;
+            height: 142px;
+            background: orangered;
+            position: absolute;
+            top: 29px;
+            left: 29px;
+            border-radius: 100%;
+            z-index: 10;
+            box-shadow: 0 0 25px 25px orange inset;
+        }
+        .side{
+            /* float: left; */
+            width: 100px;
+            height: 100px;
+            background: pink;
+            border-radius: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+        }
+        .side1{           
+            position: absolute;
+            left: 50px;
+        }
+        .side2{
+            position: absolute;
+            top: 50px;
+        }
+        .side3{
+            position: absolute;
+            right: 0;
+            top: 50px;
+        }
+        .side4{
+            position: absolute;
+            bottom: 0;
+            left: 50px;
+        }
+    </style>    
+</head>
+<body>
+    <div class="main">
+        <div class="flower clearfix">
+            <div class="son"></div>
+            <div class="son"></div>
+            <div class="son"></div>
+            <div class="son"></div>
+            <div class="soncenter"></div>
+            <!-- <div class="center"></div> -->
+        </div>
+        <div class="flower">
+            <div class="son2"></div>
+            <div class="son2"></div>
+            <div class="son2"></div>
+            <div class="son2"></div>
+            <div class="son2"></div>
+            <div class="son2"></div>
+            <div class="son2"></div>
+            <div class="son2"></div>
+            <div class="son2_center"></div>
+        </div>
+        <div class="flower clearfix">
+            <div class="son1"></div>
+            <div class="son1"></div>
+            <div class="son1center"></div>
+            <!-- <div class="center"></div> -->
+        </div>
+        <div class="flower clearfix">
+            <div class="center"></div>
+            <div class="side side1"></div>
+            <div class="side side2"></div>
+            <div class="side side3"></div>
+            <div class="side side4"></div>
+        </div>
+    </div>
+</body>
+</html>

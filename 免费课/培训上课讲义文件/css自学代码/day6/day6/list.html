@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .list{
+            width: 300px;
+            margin: 0 auto;
+        }
+        ul{
+            list-style: none;
+        }
+        h3{
+            font-size: 16px;
+            border-bottom: 1px solid gray;
+            line-height: 38px;
+        }
+        h3 img{
+            margin-right: 5px;
+            vertical-align: top;
+            padding-top: 4px;
+        }
+        h3 a{
+            font-size: 12px;
+            text-decoration: none;
+            color: green;
+            margin-left: 40px;
+        }
+        ul li{
+            line-height: 30px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: #000;
+        }
+        ul li:hover{
+            background: gray;
+        }
+        ul li a::before{
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: 8px solid red;
+            border-color: transparent transparent transparent red;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <h3>
+            <img src="img/icon.gif" alt="">前端视频下载
+            <a href="">阅读更多</a>
+        </h3>
+        <ul>
+            <li><a href="">珠峰架构师培训视频</a></li>
+            <li><a href="">珠峰架构师培训视频</a></li>
+            <li><a href="">珠峰架构师培训视频</a></li>
+            <li><a href="">珠峰架构师培训视频</a></li>
+            <li><a href="">珠峰架构师培训视频</a></li>
+            <li><a href="">珠峰架构师培训视频</a></li>
+            <!-- <li>珠峰架构师培训视频</li>
+            <li>珠峰架构师培训视频</li>
+            <li>珠峰架构师培训视频</li>
+            <li>珠峰架构师培训视频</li>
+            <li>珠峰架构师培训视频</li> -->
+        </ul>
+    </div>
+</body>
+</html>

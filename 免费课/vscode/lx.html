@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="myId">
+	</div>
+	<script>
+		
+	</script>
+	<script>
+		//数组扁平化
+		//var arr = [1,2,[3,[4,5,[8,9,[13,1,[9]]]]]];
+		// function myFlat(arr,result) {
+		// 	if(!result){
+		// 		result = [];
+		// 	}
+		// 	for (var i = 0; i < arr.length; i++) {
+		// 		if (arr[i] === 'object') {
+		// 			return myFlat(arr[i],result)
+		// 		} else {
+		// 			return result.push(arr[i])
+		// 		}
+		// 	}
+		// 	return result
+		// }
+		// alert(arr)
+		//打乱数组
+		// var arr = [1,2,3,4,5,6]
+		// arr.sort(function (a,b) {
+		// 	return Math.random() - .5
+		// })
+		// alert(arr)
+		
+		//对象去重
+		var arr1 = ['a', 'b','b','b', 'c', 'a', 'b', 'c', 'd'];
+		// var obj = {};
+		// for (var i = 0; i < arr.length; i++) {
+		// 	if (!obj[arr[i]]) {
+		// 		obj[arr[i]] = true;
+		// 	} else {
+		// 		arr.splice(i,1);
+		// 		i--;
+		// 	}
+		// }
+		// alert(arr)
+		
+		//for循环嵌套去重
+		 // for (var i = 0; i < arr.length; i++) {
+		 // 	for (var j = i+1; j < arr.length; j++) {
+		 // 		if (arr[i] === arr[j]) {
+		 // 			arr.splice(j,1)
+		 // 			j--;
+		 // 		}
+		 // 	}
+		 // }
+		 // alert(arr)
+	
+		var arr = [1,2,3,4,5];
+		arr.splice(1,1);
+		alert(arr)
+	</script>
+</body>
+</html>

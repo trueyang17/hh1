@@ -1,0 +1,26 @@
+input{
+    display: none;
+}
+div{
+    text-align:center;
+}
+input+label{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    /* background: gray; */
+    vertical-align: middle;
+    margin-right: 50px;
+}
+#banana:checked+label{
+    background:white url("../img/香蕉.png") center no-repeat;
+}
+#apple:checked+label{
+    background:white url("../img/苹果.png") center no-repeat;
+}
+#orange:checked+label{
+    background:white url("../img/橘子.png") center no-repeat;
+}
+#pear:checked+label{
+    background:white url("../img/梨.png") center no-repeat;
+}

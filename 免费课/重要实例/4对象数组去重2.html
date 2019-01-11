@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function a(arr) {
+		//var arr
+		var obj = {};
+		for (var i = 0; i < arr.length; i++) {
+		    var cur = arr[i];
+		    if (!obj[cur]) {
+		        // 没有obj[cur]这一项
+		        obj[cur] = true;
+		    } else {
+		        arr.splice(i, 1);
+		        i--;
+		    }
+		}
+		return arr	
+	}
+		//var arr = ['a', 'b', 'c', 'a', 'b', 'c', 'd'];
+		//console.log(a(arr))
+
+	Array.prototype.qc = function () {
+		var obj = {};
+		for (var i = 0; i < this.length;i++){
+			var cur = this[i];
+			if (!obj[cur]) {
+				obj[cur] = true;
+			} else {
+				this.splice(i,1);
+				i--;
+			}
+		}
+		return this
+	}
+	var ar = ['a', 'b', 'c', 'a', 'b', 'c', 'd',0,0,1,1,1,1,2];
+	ar.qc()
+	console.log(ar)
+	</script>
+</body>
+</html>

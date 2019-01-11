@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            user-select: none;
+        }
+        input{
+            background: red;
+            border: 10px solid yellow;
+            display: none;
+        }
+        input:checked+label{
+            background: #e26829;
+        }
+        label{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #ccc;
+            border: 10px solid #f9dc7a;
+            border-radius: 50%;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <h3>性别</h3>
+    男
+    <label for="man"></label>
+    <input id="man" type="radio" name="sex" checked />
+    女
+    <input id="woman" type="radio" name="sex" />
+    <label for="woman"></label>
+</body>
+</html>

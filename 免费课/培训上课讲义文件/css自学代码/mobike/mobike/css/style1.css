@@ -1,0 +1,162 @@
+header{
+    position: relative;
+    width:100%;
+}
+.main{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.headerTop{
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.headerTop .logo{
+    float: left;
+    width: 100px;
+}
+.headerTop .logo img{
+    width: 100%;
+}
+.headerTop nav{
+    float: right;
+}
+.headerTop nav a{
+    float: left;
+    line-height: 30px;
+    padding: 0 20px;
+    color: #fff;
+}
+.banner{
+    width: 100%;
+    overflow: hidden;
+}
+.banner ul{
+    width: 300%;
+}
+.banner ul li{
+    float: left;
+    width: 33.33%;
+    height: 762px;
+}
+.banner ul li>div{
+    position: relative;
+    height: 762px;
+}
+.banner ul li:first-child{
+    background: url(../img/hero-bg-5.jpg) no-repeat center;
+    background-size: cover;
+}
+.banner ul li:nth-child(2){
+    background: url(../img/hero-bg-7.jpg) no-repeat center;
+}
+.banner ul li:last-child{
+    background: url(../img/hero-bg-8.jpg) no-repeat center;
+}
+.banner ul li h3{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -50px;
+    font-size: 62px;
+    line-height: 100px;
+    color: #fff;
+}
+.banner ul li a{
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: 70px;
+    line-height: 50px;
+    padding: 0 26px;
+    background: rgba(0,0,0,.6);
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 8px;
+}
+.headerBottom{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    background: rgba(0,0,0,.4);
+    font-size: 16px;
+    color: #fff;
+}
+.headerBottom a{
+    display: inline-block;
+    background: linear-gradient(#bb2613, #ff2e2e);
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+}
+/* hero-promos */
+.hero-promos ul li{
+    float: left;
+    width: 25%;
+    min-height: 260px;
+    background: red;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    margin-top: 1px;
+}
+.hero-promos ul li:first-child{
+    background: url(../img/promo-01.jpg) no-repeat center;
+    background-size: cover;
+}
+.hero-promos ul li:nth-child(2){
+    background: url(../img/promo-02.jpg) no-repeat center;
+    background-size: cover;
+}
+.hero-promos ul li:nth-child(3){
+    background: url(../img/promo-03.jpg) no-repeat center;
+    background-size: cover;
+}
+.hero-promos ul li:nth-child(4){
+    background: url(../img/promo-04.jpg) no-repeat center;
+    background-size: cover;
+}
+.hero-promos ul li a{
+    display: block;
+    line-height: 34px;
+    margin-top: 35px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+/* meta-links-wrap */
+.meta-links-wrap{
+    padding: 45px 0;
+}
+.meta-links-wrap ul{}
+.meta-links-wrap ul li{
+    width: 33.33%;
+    float: left;
+    padding: 10px 0 10px 60px;
+    box-sizing: border-box;
+}
+.meta-links-wrap ul li:first-child{
+    background: url(../img/icon-wechat.png) no-repeat left center;
+    background-size: 50px;
+}
+.meta-links-wrap ul li:nth-child(2){
+    background: url(../img/icon-rp.png) no-repeat left center;
+    background-size: 50px;
+}
+.meta-links-wrap ul li:last-child{
+    background: url(../img/icon-credit.png) no-repeat left center;
+    background-size: 50px;
+}
+.meta-links-wrap ul li h4{
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.meta-links-wrap ul li p{
+    line-height: 22px;
+}

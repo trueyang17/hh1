@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var arr = [1,2,3,[3,4,[5,6],[7]]];
+		function myFlat(arr,result) {
+			if (!result) {
+				 result = [];
+			}
+			for (var i = 0; i < arr.length; i++) {
+				if (arr[i] === 'object') {
+					myFlat(arr[i],result)
+				} else {
+					result.push(arr[i])
+				}
+			}
+			return result
+		}
+		alert(myFlat(arr))
+
+	</script>
+</body>
+</html>

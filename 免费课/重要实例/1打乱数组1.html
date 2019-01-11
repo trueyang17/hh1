@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 随机打乱一个数组 思考题 sort
+		 var arr = [1, 2, 3, 4, 8, 9]; // 2 => 0.25
+
+		arr.sort(function(a, b) {
+		    return Math.random() - .5;
+		});
+		 alert(arr);
+		// arr.sort(() => Math.random() - .5);
+		// var total = 0; 
+		// for (var i = 0; i < 999999; i++) {
+		//     arr.sort(function(a, b) {
+		//         return Math.random() - .5;
+		//     });
+		//     if (arr[1] === 2) {
+		//         total++;
+		//     }
+		// }
+		// console.log(total/999999) // 验证算法是否正确  值在0.25左右
+	</script>
+</body>
+</html>

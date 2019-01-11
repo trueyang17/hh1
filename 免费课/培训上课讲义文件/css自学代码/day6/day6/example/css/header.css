@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style: none;
+}
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+}
+.clearfix{
+    zoom: 1;
+}
+.header{
+    width: 1204px;
+    margin: 0 auto;
+}
+.header .logo,.header .nav,.header .car{
+    float: left;
+}
+.header .login{
+    float: right;
+}
+.header .logo{
+    margin-top: 10px;
+}
+.header .nav li{
+    float: left;
+    line-height: 32px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.header .nav li:hover{
+    border-bottom: 2px solid blue;
+}
+.header .nav li a{
+    text-decoration: none;
+    color: #000;
+}
+.header .nav li a:hover{
+    color: rgb(68, 68, 76);
+}
+.header .car{
+    margin-left: 20px;
+}
+.header .car span{
+    display: inline-block;
+    line-height: 32px;
+    margin-top: 15px;
+}
+.header .car span img{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.header .login{
+    line-height: 32px;
+    margin-top: 15px;
+}
+.header .login a{
+    color: blue;
+    text-decoration: none;
+    margin-right: 20px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 导入式 -->
+    <style>
+        /* 相邻选择器 */
+        /* p+span{
+            color: red;
+        } */
+        p~span{
+            color: red;
+        }
+        /* 交集选择器 */
+        p#p1{
+
+        }
+        span,p,h1{
+            color: red;
+        }
+        [title]{
+            font-size: 40px;
+        }
+        [title="tit1"]{
+            font-size: 10px;
+        }
+        a:hover{
+            color: red;
+        }
+        p::before{
+            content:"我是哥哥";
+        }
+        p::after{
+            content: "我是弟弟";
+        }
+    </style>
+</head>
+<body>
+   <p id="p1" title="tit1">我是p元素</p>
+</body>
+</html>

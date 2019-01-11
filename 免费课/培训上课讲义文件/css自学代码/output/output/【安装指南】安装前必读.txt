@@ -1,0 +1,38 @@
+﻿
+# Cutterman 3.0安装指南
+
+当前版本： 3.0，适用于MAC/WIN 下的PS CC/CC2014/CC2015版本，注意不支持CS6
+
+
+## 第一次安装（之前没安装过Cutterman）
+1. 打开PS
+2. 菜单栏  文件-》脚本-》浏览，选择当前目录下的“第一次安装.jsx”文件
+3. 在弹出的警告款点击OK，开始安装
+4. 安装完成后，重启PS。在菜单栏  窗口 -》 扩展里头找到cutterman即可启动
+
+
+## 卸载安装（之前安装过旧版本的cutterman）
+1. 打开PS
+2. 菜单栏  文件-》脚本-》浏览，选择当前目录下的“卸载安装.jsx”文件
+3. 接着会自动打开一个文件夹，手动删除里面的Cutterman目录（如果提示无法删除，是因为当前PS正在使用，请退出PS再删除）
+4. 然后把当前安装包目录下的cutterman整个手动拷贝过去
+5. 重启PS，即可使用
+
+
+
+有安装问题的，请加入官方QQ群（群号在官网页面底部）
+
+
+附上几个PS的软件资源，如果有需要请自行下载
+
+Adobe CC 2014  Mac/Win
+链接: http://pan.baidu.com/s/1gdAF3QN 密码: vbk9
+
+Adobe CC 2015 软件下载 Mac+Win）
+http://yun.baidu.com/s/1sjIAYiL
+
+Adobe CC Mac
+链接: http://pan.baidu.com/s/1c0ivviw 密码: kqaz
+
+Photoshop CC Win
+链接: http://pan.baidu.com/s/1pJLU64j 密码: 98ef

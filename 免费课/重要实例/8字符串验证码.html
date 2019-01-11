@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// function vaildata() {
+		// 	var str = 'hfhhjgl11abcjj124eikmnopqrstuvwxyzxhxHFFGH6567853376770098'
+		// 	var index = null;
+		// 	var result = '';
+		// 	for (var i = 0; i < 4; i++) {
+		// 		index = Math.floor(Math.random() * str.length);
+		// 		result += str.charAt(index);
+		// 	}
+		// 	return result;
+		// }
+		// console.log(vaildata())
+
+		//for去重版
+		// function vaildata() {
+		// 	var str = 'hfhjgl11abcjj124eikmnopqrstuvwxyzxhxHFFGH6567853376770098'
+		// 	var index = '';
+		// 	var result = '';
+		// 	for (var i = 0; i < 4; i++) {
+		// 		//在当前str的所有索引中随机取一个；
+		// 		index = Math.floor(Math.random() * str.length);
+		// 		//取到索引index在str中的值和result中字符进行拼接；
+		// 		var cur = str.charAt(index);
+		// 		if (result.indexOf(cur) === -1) {
+		// 			result += cur;
+		// 		} else {
+		// 			i--;
+		// 		}
+				
+		// 	}
+		// 	return result;
+		// }
+		// console.log(vaildata())
+
+
+		// function vaildata() {
+		// 	var str = 'hfhjgl11abcjj124eikmnopqrstuvwxyzxhxHFFGH6567853376770098'
+		// 	var index = '';
+		// 	var result = '';
+		// 	for (var i = 0; i < 4; i++) {
+		// 		//在当前str的所有索引中随机取一个；
+		// 		index = Math.floor(Math.random() * str.length);
+		// 		//取到索引index在str中的值和result中字符进行拼接；
+		// 		var cur = str.charAt(index);
+		// 		if (!result.includes(cur)) {
+		// 			result += cur;
+		// 		}	
+		// 	}
+		// 	return result;
+		// }
+		// console.log(vaildata())
+
+
+
+
+		//while写法
+		// function vaildata() {
+		// 	var str = 'hfhhjgl11abcjj124eikmnopqrstuvwxyzxhxHFFGH6567853376770098'
+		// 	var index = null;
+		// 	var result = '';
+		// 	var cur = '';
+		// 	while (4 > result.length) {
+		// 		//取到可用随机数索引
+		// 		index = Math.floor(Math.random() * str.length);
+		// 		var cur = str[index];//取到索引的值
+		// 		//判定这个值在不在result里面，不在就将这个值放入result；
+		// 		if (result.indexOf(cur) === -1) {
+		// 			result += cur;
+		// 		} 
+		// 	}
+		// 	return result;
+		// }
+		// console.log(vaildata())
+
+
+		// function vaildata() {
+		// 	var str = 'hfhhjgl11abcjj124eikmnopqrstuvwxyzxhxHFFGH6567853376770098'
+		// 	var index = null;
+		// 	var result = '';
+		// 	while (result.length < 4) {
+		// 		index = Math.floor(Math.random() * str.length);
+		// 		if (result.indexOf(str[index]) === -1) {
+		// 			result += str[index];
+		// 		} 
+		// 	}
+		// 	return result;
+		// }
+		// console.log(vaildata())
+		// console.log(vaildata().length)
+
+		function strData() {
+			var str = 'hfhhjgl11abcjj124eikmnopqrstuvwxyzxhxHFFGH6567853376770098'
+			var index = null;
+			var result = '';
+			for (var i = 0; i < 4; i++) {
+				index = Math.floor(Math.random() * str.length);
+				console.log(result.indexOf(str[index]))
+				if (result.indexOf(str[index]) === -1) {
+					result += str[index];
+				} else{
+					i--;
+				}
+			}
+			return result
+		}
+		console.log(strData())
+
+			// while (result.length < 4) {
+			// 	index = Math.floor(Math.random() * str.length);
+			// 	if (result.indexOf(str[index]) === -1) {
+			// 		result += str[index];
+			// 	} 
+			// }
+
+
+			// if (result.length = 4) {
+			// 	index = Math.floor(Math.random() * str.length);
+			// 	result += str[index];
+			// } 
+			// if (result.length = 1) {
+			// 	index = Math.floor(Math.random() * str.length);
+			// 	result += str[index];
+			// } 
+			// if (result.length = 2) {
+			// 	index = Math.floor(Math.random() * str.length);
+			// 	result += str[index];
+			// } 
+			// if (result.length = 3) {
+			// 	index = Math.floor(Math.random() * str.length);
+			// 	result += str[index];
+			// } 
+		
+	</script>
+</body>
+</html>

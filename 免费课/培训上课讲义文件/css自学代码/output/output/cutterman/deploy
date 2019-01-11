@@ -1,0 +1,17 @@
+#! /bin/sh
+
+########################################
+## Shell script created by xiaoqiang
+## @brief
+## @date
+########################################
+
+cd ../
+if [ ! -d '/Users/xiaoqiang/Library/Application Support/Adobe/CEP/extensions/Cutterman' ]; then
+    mkdir '/Users/xiaoqiang/Library/Application Support/Adobe/CEP/extensions/Cutterman'
+fi
+if [ -d 'Cutterman2' ]; then
+    cp -r Cutterman2/*  '/Users/xiaoqiang/Library/Application Support/Adobe/CEP/extensions/Cutterman/'
+    /Applications/Adobe\ Photoshop\ CC\ 2014/Adobe\ Photoshop\ CC\ 2014.app/Contents/MacOS/Adobe\ Photoshop\ CC\ 2014
+fi
+cd -

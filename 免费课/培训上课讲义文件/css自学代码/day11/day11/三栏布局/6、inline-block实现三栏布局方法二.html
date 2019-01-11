@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .main{
+            font-size: 0;
+        }
+        .left,.middle,.right{
+            display: inline-block;
+        }
+        .left,.right{
+            font-size: 16px;
+            width: 200px;
+            height: 300px;
+            background: purple;
+            vertical-align: top;
+            opacity: .5;
+        }
+        .left{
+            position: relative;
+            z-index: 4;
+        }
+        .middle{
+            font-size: 16px;
+            width: 100%;
+            height: 400px;
+            margin: 0 -200px;
+            padding: 0 200px;
+            box-sizing: border-box;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">23423</div>
+        <div class="middle">sdjldfj</div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

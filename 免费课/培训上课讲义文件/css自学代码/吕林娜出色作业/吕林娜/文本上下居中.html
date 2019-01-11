@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 0;
+            margin: 0 auto;
+            font-size: 12px;
+            
+        }
+        .note{
+            text-align: center;
+            font-size: 12px;
+            color: darkgoldenrod;
+        }
+        .div1,.div2,.div3,.div4,.div5,.div6,.div7{
+            
+            margin-bottom: 10px;
+        }
+        .div1{
+            width: 300px;
+            height: 100px;
+            border: 1px solid purple;
+            line-height: 100px;
+            text-align: center;
+        }
+        .div2{
+            width: 20em;
+            height: 3.5em;
+            border: 1px solid purple;
+            padding-top: 2em;
+            text-align: center;
+        }
+        .div3{
+            width: 400px;
+            height: 100px;
+            border: 1px solid purple;
+        }
+        .div3>span{
+            height: 100px;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .div4{
+            width: 400px;
+            height: 5.5em;
+            border: 1px solid purple;
+            text-align: center;
+        }
+        .div4>.div4_son{
+            height: 2em;
+            background: lightpink;
+        }
+        .div5{
+            width: 400px;
+            height: 6.5em;
+            border: 1px solid purple;
+            text-align: center;
+        }
+        .div6{
+            width: 400px;
+            height: 5.5em;
+            border: 1px solid purple;
+        }
+        .div6 .div6_son{           
+            border-top: 2em solid transparent;
+            border-bottom: 2em solid transparent;
+            text-align: center;
+        }
+        .div7{
+            width: 400px;
+            border: 1px solid purple;
+            overflow: hidden;
+        }
+        .div7 .div7_son{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="div1">利用text-align和line-height实现居中</div>
+    <div class="div2">利用padding-top实现居中</div>
+    <div class="note">注意不能实现水平居中</div>
+    <div class="div3">
+        左侧加空span设为inline-block利用 verticle-align实现上下居中
+        <span></span>
+    </div> 
+    <div class="div4">
+        <div class="div4_son"></div>
+        上方加入一个div等块级元素设置合适高度实现居中
+    </div>
+    <div class="div5"><br><br>利用br实现居中</div>
+    <div class="div6">
+        <div class="div6_son">嵌套里层div利用其border-top/bottom (transparent)实现居中</div>
+    </div>
+    <div class="div7">
+        <div class="div7_son">嵌套里层div利用其margin-top/bottom实现居中</div>
+    </div>
+</body>
+</html>

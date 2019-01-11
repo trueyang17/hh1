@@ -1,0 +1,202 @@
+.main{
+    width: 1204px;
+    margin: 0 auto;
+}
+.header{
+    font-size: 14px;
+}
+.header .logo,.header .nav,.header .car{
+    float: left;
+}
+.header .login{
+    float: right;
+}
+.header .logo{
+    margin: 16px 85px 16px 1px;
+}
+.header .nav{
+    padding-top: 31px;
+}
+.header .nav li{
+    float: left;
+    line-height: 31px;
+    margin-right: 31px;
+}
+.header .nav li a:hover{
+    color: #2b7dd1;
+}
+.header .car{
+    position: relative;
+    width: 73px;
+    line-height: 31px;
+    margin-top: 31px;
+    color: #666767;
+    cursor: pointer;
+    margin-left: 90px;
+}
+.header .car>span{
+    background: url(../img/car.png) left center no-repeat;
+    padding-left: 31px;
+}
+.header .car>span:hover{
+    background-image: url(../img/car_A.png);
+    color: #2b7dd1;
+}
+.header .car .carCont{
+    position: absolute;
+    left: -139px;
+    width: 322px;
+    padding: 0 14px;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 10;
+    display: none;
+}
+.header .car:hover .carCont{
+    display: block;
+}
+.header .car .carCont h3{
+    line-height: 49px;
+    padding-top: 3px;
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+    border-bottom: 1px solid #e1e1e1;
+}
+.header .car .carCont h3 span{
+    float: right;
+    color: #7d7d7d;
+    font-size: 12px;
+}
+.header .car .carCont .carCenter{
+    padding-bottom: 48px;
+    background: url(../img/bigCar.png) no-repeat 126px 59px;
+    overflow: hidden;
+    border-bottom: 1px solid #e1e1e1;
+}
+.header .car .carCont .carCenter p{
+    width: 189px;
+    line-height: 31px;
+    margin: 134px auto 0;
+    padding-bottom: 14px;
+    text-align: center;
+    border-bottom: 1px solid #e1e1e1;
+}
+.header .car .carCont .carCenter a{
+    display: block;
+    margin-top: 23px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    color: #4e91d7;
+}
+.header .car .carCont .carBottom{
+    line-height: 39px;
+    font-size: 12px;
+    color: #7d7d7d;
+    padding: 15px 2px 15px 8px;
+}
+.header .car .carCont .carBottom a{
+    float: right;
+    padding: 0 16px;
+    background: #4e91d7;
+    border-radius: 4px;
+    color: #fff;
+}
+.header .login{
+    margin-top: 31px;
+}
+.header .login a{
+    line-height: 31px;
+}
+.header .login a:hover{
+    color: #2b7dd1;
+}
+.header .login a:first-child{
+    margin-right: 30px;
+}
+.header .login a:last-child{
+    margin-right: 31px;
+}
+
+
+
+
+/* footer start */
+#footer{
+    margin-top: 100px;
+    background: #2e2e2e;
+    padding-top: 31px;
+}
+.footerTop{
+    padding-bottom: 58px;
+}
+.footerLeft,.footerRight{
+    float: left;
+}
+.footerLeft dl{
+    float: left;
+    width: 153px;
+    margin-left: 23px;
+}
+.footerLeft dl dt{
+    line-height: 62px;
+    color: #fefdfd;
+    text-align: left;
+    font-size: 16px;
+}
+.footerLeft dl dd{
+    line-height: 29px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #a3a3a3;
+}
+.footerLeft dl dd a{
+    color: #a3a3a3;
+    font-size: 14px;
+}
+
+.footerRight{
+    margin-left: 63px;
+}
+.footerRight>img{
+    width: 198px;
+    height: 61px;
+    margin: 32px 0 0 8px;
+}
+.footerRight>div{
+    margin-top: 16px;
+}
+.footerRight>div a{
+    float: left;
+    margin-right: 13px;
+}
+.footerRight>div a:last-child{
+    margin-right: 0;
+}
+.footerBottom{
+    position: relative;
+    padding: 18px 0 17px;
+    border-top: 1px solid #5b5c5c;
+    background: #212121;
+}
+.footerBottom::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    width: 100%;
+    border-bottom: 2px solid #020202;
+}
+.footerBottom p{
+    line-height: 30px;
+    font-size: 14px;
+    color: #a3a3a3;
+    text-align: center;
+}
+.footerBottom p strong{
+    color: #cfcfcf;
+    font-weight: 500;
+    padding: 0 4px;
+}

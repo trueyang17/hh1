@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function vaildata() {
+			var str = 'hfhhjgl11abcjj124eikmnopqrstuvwxyzxhxHFFGH6567853376770098'
+			var index = null;
+			var result = '';
+			for (var i = 0; i < 4; i++) {
+				index = Math.floor(Math.random() * str.length);
+				result += str.charAt(index);
+			}
+			return result;
+		}
+		console.log(vaildata())
+		
+	</script>
+</body>
+</html>

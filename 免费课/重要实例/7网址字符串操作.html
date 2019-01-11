@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 查询字符串
+		var url = 'https://www.baidu.com/s?ie=utf-8&username=caoyuanye&password=123&age=11&height=165#hey';
+		// =>
+		    // 1. 拿到 ？ 的索引， 拿到 # 的索引
+		    // 2.  截取 (?+1, #) => ie=utf-8&username=caoyuanye&password=123&age=11&height=165
+		    // 3.  再以 & 分割 =》 [ie=utf-8, username=caoyuanye]
+		    // 4. 循环数组  把每一项用 = 分割 => [ie, utf-8]
+		    // 5. 第一项作为属性名arr[0] 第二项作为属性值arr[1]
+		function query(url) {
+		    var obj = {};
+		    // obj[arr[0]] = arr[1]
+		    var indexQ = url.indexOf('?');
+		    var indexW = url.indexOf('#');
+		    var queryStr = '';
+		    if (indexW === -1) {
+		        queryStr = url.slice(indexQ + 1);
+		        //如果不存在#号就截取？以后的字符串
+		    } else {
+		        queryStr = url.slice(indexQ + 1, indexW);
+		        //如果存在则截取？以后到#的字符串
+
+		    }
+		    // queryStr = ie=utf-8&username=caoyuanye&password=123&age=11&height=165
+		    var queryArr = queryStr.split('&');
+		    // [ie=utf-8, username=caoyuanye....]
+		    for (var i = 0; i < queryArr.length; i++) {
+		        var cur = queryArr[i]; // ie=utf-8
+		        var curArr = cur.split('='); // [ie, utf-8]
+		        obj[curArr[0]] = curArr[1];
+		    }
+		    return obj;
+		}
+		debugger
+		console.log(query(url))
+		
+		//alert(query(url))
+	</script>
+</body>
+</html>
